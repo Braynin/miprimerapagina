@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #22ddd131;
+    width: 100%;
+}
+
+ol, ul{
+    list-style: none;
+}
+
+h3, p{
+    margin-top: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a, p{
+    font-size: 14px;
+}
+
+.shadowbox{
+    box-shadow: 10px 10px 0px -3px rgba(115,124,148,0.3);
+}
+
+/* CSS del Header*/
+header{
+    background-color: #172c67e3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+
+}
+
+header nav ul{
+    display: flex;
+    gap: 1.1em;
+}
+
+header nav ul li a{
+    color: rgb(212, 147, 224);
+    font-weight: bold;
+}
+
+/* CSS del Main*/
+.seccion-1{
+    background-color: rgba(65, 139, 189, 0.384);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contenedor-acerca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    width: 600px;
+
+}
+.acerca-img{
+    margin-left: 20px;
+}
+.acerca-img img{
+    width: 200px; 
+    border-radius: 2rem;
+    
+}
+
+.seccion-2{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+
+}
+.seccion-2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* CSS del seccion pasiones*/
+
+.pasiones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.pasiones .cajita-pasion{
+    height: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #2e73ea8c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+a{
+    margin-top: 20px;
+    align-self: flex-start;
+}
+
+.pasiones div img{
+    border-radius: 10px;
+    width: 70%;
+    box-shadow: 5;
+
+}
+
+/* CSS del Footer*/
+
+.footer{
+    background-color: #5e10be6b;
+    width: 100%;
+    padding: 20px;
+}
+
+.pokefixed{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+.pokefixed:hover{
+    stroke: rgba(54, 146, 199, 0.822);
+}
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más
+    pequeñas */
+    .contenedor-acerca{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .pasiones{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: space-around;
+        margin: 20px;
+    }
+    .pasiones .cajita-pasion{
+        height: 370px;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    p, a{
+        font-size: 12px;
+    }
+}
