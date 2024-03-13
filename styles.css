@@ -289,6 +289,9 @@ a{
     .form-row button {
         margin-left: 120px;
     }
+}
+@media (max-width:700px){        
+    
     .contenedor-acerca{
         display: flex;
         flex-direction: column-reverse;
@@ -316,4 +319,4 @@ a{
     p, a{
         font-size: 12px;
     }
-}
+}    
