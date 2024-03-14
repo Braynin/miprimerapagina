@@ -108,6 +108,7 @@ header nav ul li a{
     object-position: top;
 }
 
+
 /* CSS del seccion pasiones*/
 
 .pasiones{    
@@ -117,7 +118,8 @@ header nav ul li a{
     margin: 20px;
 }
 
-.pasiones .cajita-pasion{
+
+.cajita-pasion{
     height: 100%;
     border-radius: 10px;
     padding: 20px;
@@ -133,12 +135,26 @@ header nav ul li a{
 .pasiones div img{
     border-radius: 10px;
     width: 70%;
+
 }
 
 a{
     margin-top: 20px;
     align-self: flex-start;
 }
+
+
+
+.cajita-pasion a{
+    margin-top: 20px;
+    align-self: flex-start;
+}
+
+.cajita-pasion a:hover{
+    color: red;
+}
+
+
 
 
 /*CSS del formulario*/
@@ -260,6 +276,7 @@ a{
     position: fixed;
     right: 20px;
     bottom: 20px;
+    cursor: pointer;
 }
 .pokefixed:hover{
     stroke: rgba(54, 146, 199, 0.822);
