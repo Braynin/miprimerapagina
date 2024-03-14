@@ -12,18 +12,6 @@ body{
     width: 100%;
 }
 
-.greeting{
-    height: 150px;
-    width: 100%;
-    font-weight: 800;
-    font-size: 20px;
-    text-align: center;
-    padding-top: 50px;
-   
-
-}
-
-
 ol, ul{
     list-style: none;
 }
@@ -64,13 +52,23 @@ header nav ul li a{
     font-weight: bold;
 }
 
+
 /* CSS del Main*/
+
+.greeting{
+    height: 150px;
+    width: 100%;
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 50px;
+}
+
 .seccion-1{
     background-color: rgba(65, 139, 189, 0.384);
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;   
 }
 .contenedor-acerca{
     display: flex;
@@ -78,22 +76,21 @@ header nav ul li a{
     align-items: center;
     padding: 2em;
     width: 600px;
-
 }
+
 .acerca-img{
     margin-left: 20px;
 }
+
 .acerca-img img{
     width: 200px; 
     border-radius: 2rem;
-    
 }
 
 .seccion-2{
     width: 100%;
-    height: 500px;
+    height: 300px;
     overflow: hidden;
-
 }
 .seccion-2 img{
     height: 100%;
@@ -101,6 +98,7 @@ header nav ul li a{
     object-fit: cover;
     object-position: top;
 }
+
 
 /* CSS del seccion pasiones*/
 
@@ -110,7 +108,7 @@ header nav ul li a{
     align-items: center;
     margin: 20px;
 }
-.pasiones .cajita-pasion{
+.cajita-pasion{
     height: 100%;
     border-radius: 10px;
     padding: 20px;
@@ -123,17 +121,23 @@ header nav ul li a{
     text-align: center;
 }
 
-a{
-    margin-top: 20px;
-    align-self: flex-start;
-}
-
 .pasiones div img{
     border-radius: 10px;
     width: 70%;
     box-shadow: 5;
-
 }
+
+.cajita-pasion a{
+    margin-top: 20px;
+    align-self: flex-start;
+}
+
+.cajita-pasion a:hover{
+    color: red;
+}
+
+
+
 
 /*CSS del formulario*/
 
@@ -255,6 +259,7 @@ a{
     position: fixed;
     right: 20px;
     bottom: 20px;
+    cursor: pointer;
 }
 .pokefixed:hover{
     stroke: rgba(54, 146, 199, 0.822);
